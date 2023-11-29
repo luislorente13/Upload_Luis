@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLOAD</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- cabecera -->
+    <header>
+        <h1>UPLOAD</h1>
+    </header>
+
+    <!-- contenido -->
+    <main id="contenido">
+        <h3>Sujetos registrados:</h3>
+
+        <!-- listado de asistentes -->
+        <div class="listado">
+            <ul id="lista"></ul>
+        </div>
+    </main>
+
+    <!-- formulario -->
+    <section id="formulario">
+        <form action="">
+            <!-- id -->
+            <input type="text" id="id">
+
+            <!-- nombre -->
+            <label for="nombre" class="titulo">Nombre: </label>
+            <br>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <br><br>
+
+            <!-- tipo (vivo o cargado) -->
+            <label for="tipo" class="titulo">Tipo</label>
+
+            <br>
+
+            <select name="tipo" id="tipo">
+                <!-- vacío -->
+                <option value="Seleccione un tipo">Tipo:</option>
+
+                <!-- vivo -->
+                <option value="Vivo">Vivo</option>
+
+                <!-- cargado -->
+                <option value="Cargado">Cargado</option>
+            </select>
+
+            <br><br>
+
+            <!-- domicilio -->
+            <label for="domicilio" class="titulo">Domicilio: </label>
+            <br>
+            <input type="text" name="domicilio" id="domicilio" required>
+
+            <br><br>
+
+            <!-- fecha descargado-->
+            <label for="fecha" class="titulo">Descargado en: </label>
+            <br>
+            <input type="date" name="f_descargado" id="f_descargado" required>
+
+            <br><br>
+
+            <!-- culpabilidad -->
+            <label for="culpabilidad" class="titulo">Culpabilidad</label>
+
+            <br>
+
+            <select name="culpabilidad" id="culpabilidad">
+
+            <br>
+                <!-- culpabilidad -->
+                <option value="Culpabilidad">Culpabilidad</option>
+
+                <!-- posible cooperador -->
+                <option value="Posible_cooperador">Posible cooperador</option>
+
+                <!-- cooperador -->
+                <option value="Cooperador">Cooperador</option>
+
+                <!-- delincuente -->
+                <option value="Delincuente">Delicuente</option>
+            </select>
+                
+            <br><br>
+
+            <!-- url foto-->
+            <label for="foto" class="titulo">URL foto</label>
+            <br>
+            <input type="text" name="foto" id="foto">
+
+            <br><br>
+
+            <!-- comentarios -->
+            <label for="comentarios" class="titulo">Cometarios</label>
+            <br>
+            <input type="text" name="comentarios" id="comentarios">
+
+            <br><br>
+
+            <!-- botón agregar -->
+            <input type="button" value="Agregar a la lista" onclick="agregarSujeto()" id="agregar">
+            <input type="button" value="Editar sujeto" onclick="editarSujeto()" id="editar">
+        </form>
+    </section>
+    
+    <!-- pie -->
+    <footer>
+        <!-- botones -->
+        <div class="footer1">
+            <input type="button" value="Ocultar fondo" onclick="ocultar()" id="ocultar">
+            <input type="button" value="Restablecer fondo" onclick="restablecer()" id="restablecer">
+            <input type="button" value="Añadir sujeto" onclick="añadir()" id="añadir">
+        </div>
+
+        <p class="footer2">Trabajo Noviembre Luis Lorente</p>
+    </footer>
+
+    <!-- link script -->
+    <script src="script.js"></script>
+</body>
+</html>

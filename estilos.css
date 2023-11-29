@@ -1,0 +1,121 @@
+
+/* general */
+header, main h3 {
+    text-align: center;
+}
+
+header {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+
+/*  borde verde si es un "descargado" y un borde rojo si es un humano vivo. Así mismo, debe aparecer el nombre del sujeto, en verde si es un posible candidato, en naranja si si sabe que ha colaborado en el delito, y en rojo si se sabe que ha sido uno de los perpetradores */
+.borde_verde {
+    border: 5px solid green
+}
+
+.borde_rojo {
+    border: 5px solid red;
+}
+
+.color_verde {
+    color: green;
+}
+
+.color_naranja {
+    color: orange;
+}
+
+.color_rojo {
+    color: red;
+}
+
+/* lista */
+.listado {
+    margin: 0 auto;
+    width: 300px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* botones */
+#restablecer, #volver, #id {
+    display: none;
+}
+
+/* formulario */
+#formulario {
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#formulario input[type="button"] {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    background-color: green;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#formulario input[type="text"] {
+    width: 300px;
+    height: 20px;
+}
+
+#formulario select {
+    width: 300px;
+    height: 20px;
+}
+
+#formulario input[type="date"] {
+    width: 300px;
+    height: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+/* pie */
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer1 {
+    background-color: gray;
+    padding: 10px;
+}
+
+.footer1 input[type="button"] {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer2 {
+    margin-top: 0;
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 15px;
+}
